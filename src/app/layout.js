@@ -2,6 +2,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata = {
   metadataBase: new URL("https://freundenvironmental.com"),
@@ -35,7 +36,7 @@ export default function RootLayout({ children }) {
       name: "Jeff Freund",
     },
   };
-  
+
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
       <body className={`antialiased`}>
         {children}
         <Toaster position="top-right" richColors />
+        <GoogleAnalytics />
         <Analytics />
         <SpeedInsights />
       </body>
