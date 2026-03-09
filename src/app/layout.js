@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
-  metadataBase: new URL('https://freundenvironmental.vercel.app'),
+  metadataBase: new URL('https://freundenvironmental.com'),
   title: {
     default: 'Freund Environmental | Professional Environmental Consulting',
     template: '%s | Freund Environmental'
@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: 'Freund Environmental',
     description: 'Expert environmental consulting and sustainability services.',
-    url: 'https://freundenvironmental.vercel.app',
+    url: 'https://freundenvironmental.com',
     siteName: 'Freund Environmental',
     locale: 'en_US',
     type: 'website',
@@ -23,6 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Freund" />
+      </head>
       <body
         className={`antialiased`}
       >
