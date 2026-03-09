@@ -1,6 +1,6 @@
 // app/sitemap.js
 export default function sitemap() {
-  const baseUrl = 'https://freundenvironmental.vercel.app';
+  const baseUrl = 'https://freundenvironmental.com';
   
   return [
     { url: baseUrl, lastModified: new Date() },
