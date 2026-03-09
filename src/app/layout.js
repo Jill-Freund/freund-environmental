@@ -1,5 +1,7 @@
 import { Toaster } from "sonner";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   metadataBase: new URL('https://freundenvironmental.vercel.app'),
@@ -26,6 +28,8 @@ export default function RootLayout({ children }) {
       >
         {children}
         <Toaster position="top-right" richColors />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
