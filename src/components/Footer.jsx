@@ -72,10 +72,10 @@ const Footer = () => {
       </div>
       <div className="text-sm text-center text-[#e2ffc2] lg:mt-8">
         <h1>&copy; 2026 Freund</h1>
-        <h1>
+        <h1 aria-label="Developed and built by Vishal Mishra">
           Developed by{" "}
           <a
-            href="https://vishalmishra.vercel.app"
+            href="https://mishravishal.in"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
